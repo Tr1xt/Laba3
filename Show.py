@@ -2,12 +2,9 @@ from PIL import Image, ImageDraw
 
 class Show(object):
 
-	def __init__(self):
-		self.im = Image.open('4002470663.jpg')
+	def __init__(self,name):
+		self.name = name
+		self.im = Image.open(self.name)
 
-	def showImage(self):
+	def showimage(self):
 		self.im.show()
-
-
-proga = Show()
-proga.showImage()
